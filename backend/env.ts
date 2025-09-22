@@ -1,4 +1,4 @@
-// Load the environment variables
+// Import package for loading the environment variables
 import dotenv from 'dotenv';
 // Import dependencies for working with files and directory paths
 import path from 'path';
@@ -8,6 +8,7 @@ import { fileURLToPath } from 'url';
 const __fileName = fileURLToPath(import.meta.url);
 const __dirName = path.dirname(__fileName);
 
+// Retrieve the env file
 dotenv.config({ path: path.resolve(__dirName, '../.env') });
 
 export default function env(name: string): string {
