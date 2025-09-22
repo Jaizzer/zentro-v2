@@ -1,6 +1,4 @@
-// Import package for loading the environment variables
 import dotenv from 'dotenv';
-// Import dependencies for working with files and directory paths
 import path from 'path';
 import { fileURLToPath } from 'url';
 

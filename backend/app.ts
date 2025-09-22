@@ -1,7 +1,5 @@
-// Setup the server
 import express from 'express';
 
-// Import the env variable retriever function
 import env from './env.js';
 
 // Load the port
