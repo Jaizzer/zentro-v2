@@ -7,3 +7,5 @@ const indexRouter: Router = Router();
 
 // Get the index
 indexRouter.get('/', indexControllers.getIndex);
+
+export default indexRouter;
