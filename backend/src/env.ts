@@ -7,7 +7,7 @@ const __fileName = fileURLToPath(import.meta.url);
 const __dirName = path.dirname(__fileName);
 
 // Retrieve the env file
-dotenv.config({ path: path.resolve(__dirName, '../.env') });
+dotenv.config({ path: path.resolve(__dirName, '../../.env') });
 
 export default function env(name: string): string {
 	const value = process.env[name];
