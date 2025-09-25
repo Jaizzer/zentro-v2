@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "tsx --watch ./src/server.ts",
 		"start": "node dist/server.js",
-		"build": "tsc",
+		"build": "babel src --out-dir lib --extensions '.ts'",
 		"type-check": "tsc --noEmit",
 		"lint": "eslint .",
 		"lint:fix": "eslint --fix .",
