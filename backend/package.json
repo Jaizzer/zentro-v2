@@ -13,7 +13,7 @@
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
 		"test": "jest ",
-		"prepare": "husky"
+		"prepare": "cd .. && husky ./backend/.husky"
 	},
 	"lint-staged": {
 		"*.{js,jsx,ts,tsx}": [
