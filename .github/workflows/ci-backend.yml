@@ -11,6 +11,10 @@ jobs:
     quality-checks:
         runs-on: ubuntu-latest
 
+         defaults:
+          run:
+         working-directory: ./backend
+
         steps:
             - name: Checkout code
               uses: actions/checkout@v4
@@ -21,11 +25,8 @@ jobs:
                   node-version-file: ".nvmrc"
                   cache: "npm"
 
-            - name: Go to /backend directory
-              uses: cd backend
-
             - name: Run tests
-              run: npm run test:run
+              run: npm run test
 
             - name: Run TypeScript type checking
               run: npm run type-check
@@ -34,7 +35,7 @@ jobs:
               run: npm run lint:fix
 
             - name: Format with Prettier
-              run: npm run Format
+              run: npm run format
 
             - name: Check for remaining ESLint errors
               run: npm run lint
