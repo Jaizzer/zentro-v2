@@ -12,9 +12,6 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Go to /backend directory
-              uses: cd backend
-
             - name: Checkout code
               uses: actions/checkout@v4
 
