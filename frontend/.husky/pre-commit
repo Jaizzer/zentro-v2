@@ -1,0 +1,4 @@
+cd frontend
+npm run test
+npm run type-check
+npx lint-staged
