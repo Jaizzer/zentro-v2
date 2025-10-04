@@ -1,19 +1,19 @@
-import eslint from "@eslint/js";
-import { defineConfig } from "eslint/config";
-import tseslint from "typescript-eslint";
-import perfectionist from "eslint-plugin-perfectionist";
-import globals from "globals";
-import reactHooks from "eslint-plugin-react-hooks";
-import reactRefresh from "eslint-plugin-react-refresh";
+import eslint from '@eslint/js';
+import { defineConfig } from 'eslint/config';
+import tseslint from 'typescript-eslint';
+import perfectionist from 'eslint-plugin-perfectionist';
+import globals from 'globals';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
 
 export default defineConfig([
 	{
-		ignores: ["**/*.js"],
+		ignores: ['**/*.js'],
 	},
 	eslint.configs.recommended,
 	tseslint.configs.strictTypeChecked,
 	tseslint.configs.stylisticTypeChecked,
-	reactHooks.configs["recommended-latest"],
+	reactHooks.configs['recommended-latest'],
 	reactRefresh.configs.vite,
 	{
 		languageOptions: {
@@ -25,5 +25,5 @@ export default defineConfig([
 			tsconfigRootDir: import.meta.dirname,
 		},
 	},
-	perfectionist.configs["recommended-natural"],
+	perfectionist.configs['recommended-natural'],
 ]);
