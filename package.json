@@ -5,7 +5,22 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"lint:frontend": "cd frontend && npm run lint",
+		"lint:backend": "cd backend && npm run lint",
+		"lint:all": "npm run lint:frontend && npm run lint:backend",
+		"lint:fix:frontend": "cd frontend && npm run lint:fix",
+		"lint:fix:backend": "cd backend && npm run lint:fix",
+		"lint:fix:all": "npm run lint:fix:frontend && npm run lint:fix:backend",
+		"format:frontend": "cd frontend && npm run format",
+		"format:backend": "cd backend && npm run format",
+		"format:all": "npm run format:frontend && npm run format:backend",
+		"format:fix:frontend": "cd frontend && npm run format:fix",
+		"format:fix:backend": "cd backend && npm run format:fix",
+		"format:fix:all": "npm run format:fix:frontend && npm run format:fix:backend",
+		"test:frontend": "cd frontend && npm test",
+		"test:backend": "cd backend && npm test",
+		"test:all": "npm run test:frontend && npm run test:backend"
 	},
 	"keywords": [],
 	"author": "",
