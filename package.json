@@ -18,8 +18,8 @@
 		"format:fix:frontend": "cd frontend && npm run format:fix",
 		"format:fix:backend": "cd backend && npm run format:fix",
 		"format:fix:all": "npm run format:fix:frontend && npm run format:fix:backend",
-		"test:frontend": "cd frontend && npm test",
-		"test:backend": "cd backend && npm test",
+		"test:frontend": "cd frontend && npm run test",
+		"test:backend": "cd backend && npm run test",
 		"test:all": "npm run test:frontend && npm run test:backend"
 	},
 	"lint-staged": {
