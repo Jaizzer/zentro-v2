@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepare": "husky install",
+		"prepare": "husky /.husky",
 		"lint:frontend": "cd frontend && npm run lint",
 		"lint:backend": "cd backend && npm run lint",
 		"lint:all": "npm run lint:frontend && npm run lint:backend",
@@ -23,8 +23,16 @@
 		"test:all": "npm run test:frontend && npm run test:backend"
 	},
 	"lint-staged": {
-		"frontend/**/*.{js,ts,tsx}": "npm run lint:frontend && npm run format:frontend && npm run test:frontend",
-		"backend/**/*.{js,ts}": "npm run lint:backend && npm run format:backend && npm run test:backend"
+		"frontend/**/*.{js,ts,tsx}": [
+			"npm run lint:frontend",
+			"npm run format:frontend",
+			"npm run test:frontend"
+		],
+		"backend/**/*.{js,ts}": [
+			"npm run lint:backend",
+			"npm run format:backend",
+			"npm run test:backend"
+		]
 	},
 	"keywords": [],
 	"author": "",
