@@ -22,6 +22,10 @@
 		"test:backend": "cd backend && npm test",
 		"test:all": "npm run test:frontend && npm run test:backend"
 	},
+	"lint-staged": {
+		"frontend/**/*.{js,ts,tsx}": "npm run lint:frontend && npm run format:frontend && npm run test:frontend",
+		"backend/**/*.{js,ts}": "npm run lint:backend && npm run format:backend && npm run test:backend"
+	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
