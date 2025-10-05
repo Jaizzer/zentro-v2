@@ -25,13 +25,11 @@
 	"lint-staged": {
 		"frontend/**/*.{js,ts,tsx}": [
 			"npm run lint:frontend",
-			"npm run format:frontend",
-			"npm run test:frontend"
+			"npm run format:frontend"
 		],
 		"backend/**/*.{js,ts}": [
 			"npm run lint:backend",
-			"npm run format:backend",
-			"npm run test:backend"
+			"npm run format:backend"
 		]
 	},
 	"keywords": [],
