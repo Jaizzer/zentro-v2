@@ -5,11 +5,16 @@ if git diff --name-only --cached | grep 'frontend/';
   then
     echo "FRONTEND FOLDER CHANGED --> starting husky..."
     cd frontend && npm run test
+   # Go back to the root directory
+    cd ../
 fi
+
 
 # Run husky pre-commit hook only if backend changed
 if git diff --name-only --cached | grep 'backend/';
   then
     echo "BACKEND FOLDER CHANGED --> starting husky..."
     cd backend && npm run test
+    # Go back to the root directory
+    cd ../
 fi
