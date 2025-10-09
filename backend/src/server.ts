@@ -4,6 +4,8 @@ import env from './env';
 // Load the port
 const PORT = env('PORT');
 
+console.log('Test frontend workflow');
+
 // Start the server
 app.listen(PORT, (error) => {
 	if (error) {
