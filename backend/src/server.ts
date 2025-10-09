@@ -1,5 +1,5 @@
-import app from './app.ts';
-import env from './env.ts';
+import app from './app';
+import env from './env';
 
 // Load the port
 const PORT = env('PORT');

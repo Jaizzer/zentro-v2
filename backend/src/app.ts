@@ -1,6 +1,6 @@
 import express from 'express';
 
-import indexRouter from './routers/index.router.ts';
+import indexRouter from './routers/index.router';
 
 // Initialize the application
 const app = express();

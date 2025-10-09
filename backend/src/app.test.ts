@@ -1,6 +1,6 @@
 import request from 'supertest';
 
-import app from './app.ts';
+import app from './app';
 
 describe('Index', () => {
 	it('responds with 200', async () => {

@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import indexControllers from '../controllers/index.controller.ts';
+import indexControllers from '../controllers/index.controller';
 
 // Initialize the index router
 const indexRouter: Router = Router();
