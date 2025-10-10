@@ -1,5 +1,5 @@
 function App() {
-	console.log('Test frontend workflow');
+	console.log('Test frontend workflow 2');
 	return <div></div>;
 }
 
