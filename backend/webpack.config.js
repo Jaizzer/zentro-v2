@@ -42,14 +42,4 @@ export default {
 	experiments: {
 		outputModule: true, // 🔹 enable ESM output
 	},
-	// Set Webpack mode (development or production)
-	mode: 'production',
-	devServer: {
-		// Serve static files from the 'dist' directory
-		static: path.resolve(__dirName, 'dist'),
-		// Serve the app on http://localhost:3000
-		port: 3000,
-		// Automatically open the browser when the server starts
-		open: true,
-	},
 };
