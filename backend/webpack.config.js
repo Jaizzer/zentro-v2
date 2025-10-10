@@ -11,7 +11,7 @@ export default {
 	entry: './src/server.ts',
 	output: {
 		// Name of the bundled output file
-		filename: 'bundle.js',
+		filename: 'app.js',
 		// Output directory
 		path: path.resolve(__dirName, 'dist'),
 		// Clean the output directory before each build

@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "tsx --watch ./src/server.ts",
-		"start": "npm run build && node dist/bundle.js",
+		"start": "npm run build && node dist/app.js",
 		"build": "webpack",
 		"type-check": "tsc --noEmit",
 		"lint": "eslint .",
