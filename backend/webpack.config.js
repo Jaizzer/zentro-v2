@@ -16,7 +16,8 @@ export default {
 		path: path.resolve(__dirName, 'dist'),
 		// Clean the output directory before each build
 		clean: true,
-		module: true,
+
+		// Output ES module bundle
 		library: { type: 'module' },
 	},
 	resolve: {
