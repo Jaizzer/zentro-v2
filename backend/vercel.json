@@ -11,9 +11,5 @@
 			"src": "/(.*)",
 			"dest": "./dist/app.js"
 		}
-	],
-	"outputDirectory": "dist",
-	"installCommand": "npm install",
-	"buildCommand": "npm run build",
-	"devCommand": "node --watch dist/app.js"
+	]
 }
