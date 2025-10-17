@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prepare": "husky",
@@ -40,5 +41,8 @@
 	"devDependencies": {
 		"husky": "^9.1.7",
 		"lint-staged": "^16.2.3"
+	},
+	"dependencies": {
+		"express": "^5.1.0"
 	}
 }
