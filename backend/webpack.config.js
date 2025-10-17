@@ -20,7 +20,7 @@ export default {
 		// Output ES module bundle
 		library: { type: 'module' },
 	},
-	mode: 'production',
+	mode: 'development',
 	resolve: {
 		// Resolve these file extensions when importing
 		extensions: ['.ts', '.js'],
