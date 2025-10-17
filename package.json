@@ -41,8 +41,5 @@
 	"devDependencies": {
 		"husky": "^9.1.7",
 		"lint-staged": "^16.2.3"
-	},
-	"dependencies": {
-		"express": "^5.1.0"
 	}
 }
