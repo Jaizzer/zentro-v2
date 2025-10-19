@@ -5,7 +5,7 @@ import perfectionist from 'eslint-plugin-perfectionist';
 
 export default defineConfig(
 	{
-		ignores: ['**/*.js'],
+		ignores: ['**/*.js', 'src/prisma/**/*', 'src/generated/**/*'],
 	},
 	eslint.configs.recommended,
 	tseslint.configs.strictTypeChecked,
