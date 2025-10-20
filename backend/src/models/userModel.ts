@@ -2,7 +2,7 @@ import { PrismaClient, User } from '../generated/prisma';
 
 const prisma: PrismaClient = new PrismaClient();
 
-export async function create(data: { username: string }) {
+export async function create(data: { username: string }): Promise<null | User> {
 	try {
 		const user: User = await prisma.user.create({
 			data,
