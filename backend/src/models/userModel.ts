@@ -13,3 +13,17 @@ export async function create(data: { username: string }) {
 		throw error;
 	}
 }
+
+export async function findById(id: string): Promise<null | User> {
+	try {
+		const user: null | User = await prisma.user.findUnique({
+			where: {
+				id: id,
+			},
+		});
+		return user;
+	} catch (error) {
+		console.error('Failed to retrieve the user. ', error);
+		throw error;
+	}
+}
