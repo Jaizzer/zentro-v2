@@ -6,5 +6,5 @@ import indexRouter from './routers/index.router';
 const app = express();
 
 app.use('/', indexRouter);
-
+console.log('Test github actions');
 export default app;
