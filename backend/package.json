@@ -6,7 +6,8 @@
 	"scripts": {
 		"dev": "tsx --watch ./src/server.ts",
 		"start": "npm run build && node dist/app.js",
-		"deploy-database": "cd src && npx prisma migrate deploy",
+		"migrate-database:production": "cd src && npx prisma migrate deploy",
+		"migrate-database:development": "cd src && npx prisma generate",
 		"build": "webpack",
 		"type-check": "tsc --noEmit",
 		"lint": "eslint .",
