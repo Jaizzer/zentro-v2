@@ -2,7 +2,7 @@ name: Deploy
 on:
     push:
         paths:
-            - "backend/src/prisma/migrations/**"
+            - "backend"
         branches:
             - main
 
