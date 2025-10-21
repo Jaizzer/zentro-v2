@@ -14,6 +14,20 @@ export async function create(data: { username: string }): Promise<null | User> {
 	}
 }
 
+export async function deleteById(id: string): Promise<null | User> {
+	try {
+		const deletedUser: User = await prisma.user.delete({
+			where: {
+				id,
+			},
+		});
+		return deletedUser;
+	} catch (error) {
+		console.error('Failed to delete the user. ', error);
+		throw error;
+	}
+}
+
 export async function findById(id: string): Promise<null | User> {
 	try {
 		const user: null | User = await prisma.user.findUnique({
