@@ -1,5 +1,10 @@
 export default function AuthenticationPage() {
-	return <div></div>;
+	return (
+		<>
+			<h1>Welcome to Zentro!</h1>
+			<p>Zentro is an easy to use cloud storage.</p>
+		</>
+	);
 }
 
 console.log('Github actions test');
