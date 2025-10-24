@@ -3,6 +3,10 @@ export default function AuthenticationPage() {
 		<>
 			<h1>Welcome to Zentro!</h1>
 			<p>Zentro is an easy to use cloud storage.</p>
+
+			<span className="actions">
+				<button className="signUp">Sign Up</button>
+			</span>
 		</>
 	);
 }

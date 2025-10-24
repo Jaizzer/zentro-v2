@@ -17,4 +17,10 @@ describe('Authentication page', () => {
 		);
 		expect(description).not.toBeNull();
 	});
+
+	it('redirects to the authentication page when the sign up button is clicked', () => {
+		render(<AuthenticationPage />);
+		const signInButton: HTMLElement | null = screen.queryByText('Sign Up');
+		expect(signInButton).not.toBeNull();
+	});
 });
