@@ -20,8 +20,8 @@ describe('Authentication page', () => {
 
 	it('renders the sign up button', () => {
 		render(<AuthenticationPage />);
-		const signInButton: HTMLElement | null = screen.queryByText('Sign Up');
-		expect(signInButton).not.toBeNull();
+		const signUpButton: HTMLElement | null = screen.queryByText('Sign Up');
+		expect(signUpButton).not.toBeNull();
 	});
 
 	it('renders the sign in button', () => {
