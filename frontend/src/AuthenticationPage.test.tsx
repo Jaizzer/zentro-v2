@@ -23,4 +23,10 @@ describe('Authentication page', () => {
 		const signInButton: HTMLElement | null = screen.queryByText('Sign Up');
 		expect(signInButton).not.toBeNull();
 	});
+
+	it('renders the sign in button', () => {
+		render(<AuthenticationPage />);
+		const signInButton: HTMLElement | null = screen.queryByText('Sign In');
+		expect(signInButton).not.toBeNull();
+	});
 });

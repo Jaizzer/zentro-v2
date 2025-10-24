@@ -6,6 +6,7 @@ export default function AuthenticationPage() {
 
 			<span className="actions">
 				<button className="signUp">Sign Up</button>
+				<button className="signIn">Sign In</button>
 			</span>
 		</>
 	);
