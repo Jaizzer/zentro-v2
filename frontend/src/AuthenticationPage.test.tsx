@@ -18,7 +18,7 @@ describe('Authentication page', () => {
 		expect(description).not.toBeNull();
 	});
 
-	it('redirects to the authentication page when the sign up button is clicked', () => {
+	it('renders the sign up button', () => {
 		render(<AuthenticationPage />);
 		const signInButton: HTMLElement | null = screen.queryByText('Sign Up');
 		expect(signInButton).not.toBeNull();
