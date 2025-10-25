@@ -11,5 +11,3 @@ export default function AuthenticationPage() {
 		</>
 	);
 }
-
-console.log('Github actions test');
