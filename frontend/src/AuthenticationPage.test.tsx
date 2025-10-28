@@ -1,9 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import { userEvent } from '@testing-library/user-event';
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 
 import AuthenticationPage from './AuthenticationPage';
+import SignUpPage from './SignUpPage';
 
 describe('Authentication page', () => {
 	it('renders the welcome message', () => {
@@ -56,7 +57,10 @@ describe('Authentication page', () => {
 		// Render the authentication page component
 		render(
 			<MemoryRouter initialEntries={['/']}>
-				<AuthenticationPage />
+				<Routes>
+					<Route element={<AuthenticationPage />} path="/" />
+					<Route element={<SignUpPage />} path="/sign-up" />
+				</Routes>
 			</MemoryRouter>
 		);
 
@@ -69,7 +73,7 @@ describe('Authentication page', () => {
 			await user.click(signUpButton);
 		}
 
-		const registerPageHeading = screen.findByText('Register');
+		const registerPageHeading = await screen.findByText('Register');
 
 		expect(registerPageHeading).not.toBeNull();
 	});
