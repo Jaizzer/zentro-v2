@@ -1,6 +1,8 @@
-export default function AuthenticationPage() {
-	import { Link } from 'react-router';
+import type { JSX } from 'react';
 
+import { Link } from 'react-router';
+
+export default function AuthenticationPage(): JSX.Element {
 	return (
 		<>
 			<h1>Welcome to Zentro!</h1>
