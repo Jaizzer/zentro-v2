@@ -74,9 +74,9 @@ describe('Authentication page', () => {
 			await user.click(signUpButton);
 		}
 
-		const registerPageHeading = await screen.findByText('Register');
+		const signUpPageDescription = await screen.findByText('Create an account');
 
-		expect(registerPageHeading).not.toBeNull();
+		expect(signUpPageDescription).not.toBeNull();
 	});
 
 	it('redirects to the sign in page when the Sign In button is clicked', async () => {
