@@ -4,6 +4,7 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 
 import AuthenticationPage from './AuthenticationPage';
+import SignInPage from './SignInPage';
 import SignUpPage from './SignUpPage';
 
 describe('Authentication page', () => {
@@ -76,5 +77,30 @@ describe('Authentication page', () => {
 		const registerPageHeading = await screen.findByText('Register');
 
 		expect(registerPageHeading).not.toBeNull();
+	});
+
+	it('redirects to the sign in page when the Sign In button is clicked', async () => {
+		// Render the authentication page component
+		render(
+			<MemoryRouter initialEntries={['/']}>
+				<Routes>
+					<Route element={<AuthenticationPage />} path="/" />
+					<Route element={<SignInPage />} path="/sign-in" />
+				</Routes>
+			</MemoryRouter>
+		);
+
+		// Initialize the user
+		const user = userEvent.setup();
+
+		// Simulate sign in button click
+		const signInButton: HTMLElement | null = screen.queryByText('Sign In');
+		if (signInButton) {
+			await user.click(signInButton);
+		}
+
+		const signInPageDescription = screen.findByText('Access your files!');
+
+		expect(signInPageDescription).not.toBeNull();
 	});
 });
