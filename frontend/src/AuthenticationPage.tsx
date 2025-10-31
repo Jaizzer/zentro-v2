@@ -1,22 +1,6 @@
 import type { JSX } from 'react';
 
-import { Link } from 'react-router';
-import styled, { css } from 'styled-components';
-
-const NavLink = styled(Link)<{ $button?: boolean }>`
-	color: black;
-	text-decoration: none;
-	font-family: 'Arial';
-
-	${(props) =>
-		props.$button &&
-		css`
-			padding: 10px;
-			border-radius: 7px;
-			background-color: #6161ff;
-			color: white;
-		`};
-`;
+import NavLink from './NavLink';
 
 export default function AuthenticationPage(): JSX.Element {
 	return (
