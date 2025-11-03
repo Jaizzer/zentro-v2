@@ -1,0 +1,272 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+    /* Reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input {
+	-webkit-appearance: none;
+    appearance: none;
+	box-shadow: none !important;
+	outline: none;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: auto;
+    appearance: auto;
+}
+/* End of Reset CSS */
+
+/* Initial Stylings */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100dvh;
+	font-size: 62.5%;
+}
+
+body {
+	height: 100%;
+	font-family: "Montserrat", sans-serif;
+}
+
+
+#root {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--background);
+
+	font-size: 1.6rem;
+	color: var(--text);
+
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+button {
+	padding: 0;
+	border-width: 0;
+
+	background-color: transparent;
+	color: inherit;
+	font: inherit;
+
+	cursor: pointer;
+}
+
+textarea {
+	resize: none;
+	font: inherit;
+	outline: none;
+}
+/* End of Initial Stylings */
+
+/* Theme */
+@media (prefers-color-scheme: light) {
+	:root {
+		--text: #111023;
+		--background: #e0e0f1;
+		--primary: #948fe2;
+		--secondary: #cfcee9;
+		--accent: #5c57b2;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: #dddcef;
+		--background: #0e0e20;
+		--primary: #231d72;
+		--secondary: #171631;
+		--accent: #524da8;
+	}
+}
+/* End of Theme */
+
+/* Border Radius */
+:root {
+	--radius-none: 0px;
+	--radius-sm: 5px;
+	--radius-md: 10px;
+	--radius-lg: 15px;
+	--radius-full: 999px;
+}
+
+/* End of Border Radius */
+/* Initial Stylings */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100dvh;
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+button {
+	padding: 0;
+	border-width: 0;
+
+	background-color: transparent;
+	color: inherit;
+	font: inherit;
+
+	cursor: pointer;
+}
+
+textarea {
+	resize: none;
+	font: inherit;
+	outline: none;
+}
+
+/* End of Initial Stylings */
+`;
+
+export default GlobalStyle;

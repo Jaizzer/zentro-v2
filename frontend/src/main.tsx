@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 
-import MontserratFontStyle from './MontserratFontStyle.tsx';
+import MontserratFontStyle from './GlobalStyle.tsx';
 import routes from './routes.tsx';
 
 const router = createBrowserRouter(routes);

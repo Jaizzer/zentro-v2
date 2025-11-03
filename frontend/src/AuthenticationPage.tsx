@@ -1,6 +1,6 @@
 import type { JSX } from 'react';
 
-import MontserratFontStyle from './MontserratFontStyle';
+import MontserratFontStyle from './GlobalStyle';
 import NavLink from './NavLink';
 
 export default function AuthenticationPage(): JSX.Element {
