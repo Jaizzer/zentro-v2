@@ -5,6 +5,10 @@ export default function SignUpPage(): JSX.Element {
 		<>
 			<h1>Sign Up</h1>
 			<p>Create an account</p>
+
+			<form>
+				<input data-testid="name" type="text" />
+			</form>
 		</>
 	);
 }
