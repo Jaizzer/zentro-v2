@@ -8,6 +8,7 @@ export default function SignUpPage(): JSX.Element {
 
 			<form>
 				<input data-testid="name" type="text" />
+				<input data-testid="email" placeholder="email" type="email" />
 			</form>
 		</>
 	);

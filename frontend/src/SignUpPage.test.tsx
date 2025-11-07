@@ -19,4 +19,18 @@ describe('Sign Up page', () => {
 		console.log(nameInputField);
 		expect(nameInputField).not.toBeNull();
 	});
+
+	it('renders the email input field', () => {
+		// Render the authentication page component
+		render(
+			<MemoryRouter initialEntries={['/sign-up']}>
+				<Routes>
+					<Route element={<SignUpPage />} path="/sign-up" />
+				</Routes>
+			</MemoryRouter>
+		);
+		const nameInputField: HTMLElement | null = screen.queryByTestId('email');
+
+		expect(nameInputField).not.toBeNull();
+	});
 });
