@@ -16,7 +16,6 @@ describe('Sign Up page', () => {
 		);
 		const nameInputField: HTMLElement | null = screen.queryByTestId('name');
 
-		console.log(nameInputField);
 		expect(nameInputField).not.toBeNull();
 	});
 
