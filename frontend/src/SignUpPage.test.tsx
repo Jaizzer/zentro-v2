@@ -28,9 +28,9 @@ describe('Sign Up page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const nameInputField: HTMLElement | null = screen.queryByTestId('email');
+		const emailInputField: HTMLElement | null = screen.queryByTestId('email');
 
-		expect(nameInputField).not.toBeNull();
+		expect(emailInputField).not.toBeNull();
 	});
 
 	it('renders the password input field', () => {
