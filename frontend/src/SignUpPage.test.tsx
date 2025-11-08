@@ -32,4 +32,18 @@ describe('Sign Up page', () => {
 
 		expect(nameInputField).not.toBeNull();
 	});
+
+	it('renders the password input field', () => {
+		// Render the authentication page component
+		render(
+			<MemoryRouter initialEntries={['/sign-up']}>
+				<Routes>
+					<Route element={<SignUpPage />} path="/sign-up" />
+				</Routes>
+			</MemoryRouter>
+		);
+		const passwordInputField: HTMLElement | null = screen.queryByTestId('password');
+
+		expect(passwordInputField).not.toBeNull();
+	});
 });
