@@ -1,13 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
-    /* Reset CSS */
-
+const ResetterStyle = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html,
 body,
 div,
@@ -144,83 +141,6 @@ input[type="checkbox"] {
 	-webkit-appearance: auto;
     appearance: auto;
 }
-/* End of Reset CSS */
-
-/* Initial Stylings */
-* {
-	box-sizing: border-box;
-}
-
-html {
-	height: 100dvh;
-	font-size: 62.5%;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-	cursor: pointer;
-}
-
-body {
-	height: 100%;
-}
-
-textarea {
-	resize: none;
-	font: inherit;
-	outline: none;
-}
-
-#root {
-    width: 100%;
-    height: 100%;
-
-    background-color: var(--background);
-
-	font-size: 1.6rem;
-	color: var(--text);
-    font-family: "Montserrat", sans-serif;
-
-	display: grid;
-	justify-content: center;
-	align-content: center;
-}
-
-/* End of Initial Stylings */
-
-/* Theme */
-@media (prefers-color-scheme: light) {
-	:root {
-		--text: #111023;
-		--background: #e0e0f1;
-		--primary: #948fe2;
-		--secondary: #cfcee9;
-		--accent: #5c57b2;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--text: #dddcef;
-		--background: #0e0e20;
-		--primary: #231d72;
-		--secondary: #171631;
-		--accent: #524da8;
-	}
-}
-/* End of Theme */
-
-/* Border Radius */
-:root {
-	--radius-none: 0px;
-	--radius-sm: 5px;
-	--radius-md: 10px;
-	--radius-lg: 15px;
-	--radius-full: 999px;
-}
-
-/* End of Border Radius */
 `;
 
-export default GlobalStyle;
+export default ResetterStyle;
