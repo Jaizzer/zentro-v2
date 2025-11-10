@@ -164,7 +164,6 @@ a {
 
 body {
 	height: 100%;
-	font-family: "Montserrat", sans-serif;
 }
 
 textarea {
@@ -181,6 +180,7 @@ textarea {
 
 	font-size: 1.6rem;
 	color: var(--text);
+    font-family: "Montserrat", sans-serif;
 
 	display: grid;
 	justify-content: center;
