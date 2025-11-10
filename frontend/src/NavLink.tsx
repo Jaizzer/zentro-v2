@@ -11,7 +11,7 @@ const NavLink = styled(Link)<{ $button?: boolean }>`
 		css`
 			padding: 0.75rem;
 			border-radius: 0.5rem;
-			background-color: #8282e4;
+			background-color: var(--primary);
 			color: white;
 		`};
 `;
