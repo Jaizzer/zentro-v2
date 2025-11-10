@@ -156,11 +156,22 @@ html {
 	font-size: 62.5%;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
 body {
 	height: 100%;
 	font-family: "Montserrat", sans-serif;
 }
 
+textarea {
+	resize: none;
+	font: inherit;
+	outline: none;
+}
 
 #root {
     width: 100%;
@@ -176,29 +187,6 @@ body {
 	align-content: center;
 }
 
-
-a {
-	text-decoration: none;
-	color: inherit;
-	cursor: pointer;
-}
-
-button {
-	padding: 0;
-	border-width: 0;
-
-	background-color: transparent;
-	color: inherit;
-	font: inherit;
-
-	cursor: pointer;
-}
-
-textarea {
-	resize: none;
-	font: inherit;
-	outline: none;
-}
 /* End of Initial Stylings */
 
 /* Theme */
@@ -233,29 +221,6 @@ textarea {
 }
 
 /* End of Border Radius */
-/* Initial Stylings */
-* {
-	box-sizing: border-box;
-}
-
-html {
-	height: 100dvh;
-	font-size: 62.5%;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-	cursor: pointer;
-}
-
-textarea {
-	resize: none;
-	font: inherit;
-	outline: none;
-}
-
-/* End of Initial Stylings */
 `;
 
 export default GlobalStyle;
