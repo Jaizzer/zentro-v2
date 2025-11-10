@@ -249,17 +249,6 @@ a {
 	cursor: pointer;
 }
 
-button {
-	padding: 0;
-	border-width: 0;
-
-	background-color: transparent;
-	color: inherit;
-	font: inherit;
-
-	cursor: pointer;
-}
-
 textarea {
 	resize: none;
 	font: inherit;

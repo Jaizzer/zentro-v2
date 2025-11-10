@@ -3,6 +3,15 @@ import type { JSX } from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
+	padding: 0;
+	border-width: 0;
+
+	background-color: transparent;
+	color: inherit;
+	font: inherit;
+
+	cursor: pointer;
+
 	padding: 0.75rem;
 	border-radius: 0.5rem;
 	background-color: var(--primary);
