@@ -33,7 +33,6 @@ textarea {
 
     background-color: var(--background);
 
-	font-size: 1.6rem;
 	color: var(--text);
     font-family: "Montserrat", sans-serif;
 
