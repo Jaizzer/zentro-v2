@@ -4,7 +4,6 @@ import styled, { css } from 'styled-components';
 const NavLink = styled(Link)<{ $button?: boolean }>`
 	color: black;
 	text-decoration: none;
-	font-family: 'Arial';
 
 	${(props) =>
 		props.$button &&
