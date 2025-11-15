@@ -9,8 +9,18 @@ export default function AuthenticationPage(): JSX.Element {
 			<p>Zentro is an easy to use cloud storage.</p>
 
 			<span className="actions">
-				<Link to="/sign-up">Sign Up</Link>
-				<Link to="/sign-in">Sign In</Link>
+				<Link
+					className="p-2 rounded-md bg-primary hover:bg-accent text-white"
+					to="/sign-up"
+				>
+					Sign Up
+				</Link>
+				<Link
+					className="p-2 rounded-md bg-primary hover:bg-accent text-white"
+					to="/sign-in"
+				>
+					Sign In
+				</Link>
 			</span>
 		</>
 	);
