@@ -1,9 +1,9 @@
 import type { JSX } from 'react';
 
-export default function SignUpPage(): JSX.Element {
+export default function RegisterPage(): JSX.Element {
 	return (
 		<>
-			<h1>Sign Up</h1>
+			<h1>Register</h1>
 			<p>Create an account</p>
 
 			<form className="authentication-form">

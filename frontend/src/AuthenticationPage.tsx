@@ -15,15 +15,15 @@ export default function AuthenticationPage(): JSX.Element {
 				<span className="w-80 flex basis-0 flex-row gap-2">
 					<Link
 						className="flex-1 p-2 rounded-md bg-primary hover:bg-accent text-white text-center font-semibold"
-						to="/sign-in"
+						to="/log-in"
 					>
-						Sign In
+						Log In
 					</Link>
 					<Link
 						className="flex-1 w-full p-2 rounded-md bg-background hover:bg-accent hover:text-white text-accent text-center font-semibold"
-						to="/sign-up"
+						to="/register"
 					>
-						Sign Up
+						Register
 					</Link>
 				</span>
 			</section>

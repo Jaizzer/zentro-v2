@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 
-import SignUpPage from './SignUpPage';
+import SignUpPage from './RegisterPage';
 
 describe('Sign Up page', () => {
 	it('renders the name input field', () => {

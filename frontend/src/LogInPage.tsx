@@ -1,6 +1,6 @@
 import type { JSX } from 'react';
 
-export default function SignInPage(): JSX.Element {
+export default function LogInPage(): JSX.Element {
 	return (
 		<>
 			<h1>Log In</h1>

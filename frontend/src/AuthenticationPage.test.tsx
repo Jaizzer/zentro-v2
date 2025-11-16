@@ -4,8 +4,8 @@ import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 
 import AuthenticationPage from './AuthenticationPage';
-import SignInPage from './SignInPage';
-import SignUpPage from './SignUpPage';
+import LogInPage from './LogInPage';
+import RegisterPage from './RegisterPage';
 
 describe('Authentication page', () => {
 	it('renders the welcome message', () => {
@@ -36,7 +36,7 @@ describe('Authentication page', () => {
 		expect(description).not.toBeNull();
 	});
 
-	it('renders the sign up button', () => {
+	it('renders the register button', () => {
 		// Render the authentication page component
 		render(
 			<MemoryRouter initialEntries={['/authentication']}>
@@ -45,11 +45,11 @@ describe('Authentication page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const signUpButton: HTMLElement | null = screen.queryByText('Sign Up');
-		expect(signUpButton).not.toBeNull();
+		const registerButton: HTMLElement | null = screen.queryByText('Register');
+		expect(registerButton).not.toBeNull();
 	});
 
-	it('renders the sign in button', () => {
+	it('renders the log in button', () => {
 		// Render the authentication page component
 		render(
 			<MemoryRouter initialEntries={['/authentication']}>
@@ -58,17 +58,17 @@ describe('Authentication page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const signInButton: HTMLElement | null = screen.queryByText('Sign In');
-		expect(signInButton).not.toBeNull();
+		const logInButton: HTMLElement | null = screen.queryByText('Log In');
+		expect(logInButton).not.toBeNull();
 	});
 
-	it('redirects to the sign up page when the Sign Up button is clicked', async () => {
+	it('redirects to the register page when the register button is clicked', async () => {
 		// Render the authentication page component
 		render(
 			<MemoryRouter initialEntries={['/authentication']}>
 				<Routes>
 					<Route element={<AuthenticationPage />} path="/authentication" />
-					<Route element={<SignUpPage />} path="/sign-up" />
+					<Route element={<RegisterPage />} path="/register" />
 				</Routes>
 			</MemoryRouter>
 		);
@@ -76,24 +76,24 @@ describe('Authentication page', () => {
 		// Initialize the user
 		const user = userEvent.setup();
 
-		// Simulate sign up button click
-		const signUpButton: HTMLElement | null = screen.queryByText('Sign Up');
-		if (signUpButton) {
-			await user.click(signUpButton);
+		// Simulate register button click
+		const registerButton: HTMLElement | null = screen.queryByText('Register');
+		if (registerButton) {
+			await user.click(registerButton);
 		}
 
-		const signUpPageDescription = await screen.findByText('Create an account');
+		const registerPageDescription = await screen.findByText('Create an account');
 
-		expect(signUpPageDescription).not.toBeNull();
+		expect(registerPageDescription).not.toBeNull();
 	});
 
-	it('redirects to the sign in page when the Sign In button is clicked', async () => {
+	it('redirects to the log in page when the log in button is clicked', async () => {
 		// Render the authentication page component
 		render(
 			<MemoryRouter initialEntries={['/authentication']}>
 				<Routes>
 					<Route element={<AuthenticationPage />} path="/authentication" />
-					<Route element={<SignInPage />} path="/sign-in" />
+					<Route element={<LogInPage />} path="/log-in" />
 				</Routes>
 			</MemoryRouter>
 		);
@@ -101,14 +101,14 @@ describe('Authentication page', () => {
 		// Initialize the user
 		const user = userEvent.setup();
 
-		// Simulate sign in button click
-		const signInButton: HTMLElement | null = screen.queryByText('Sign In');
-		if (signInButton) {
-			await user.click(signInButton);
+		// Simulate log in button click
+		const logInButton: HTMLElement | null = screen.queryByText('Log In');
+		if (logInButton) {
+			await user.click(logInButton);
 		}
 
-		const signInPageDescription = screen.findByText('Access your files!');
+		const logInPageDescription = screen.findByText('Access your files!');
 
-		expect(signInPageDescription).not.toBeNull();
+		expect(logInPageDescription).not.toBeNull();
 	});
 });

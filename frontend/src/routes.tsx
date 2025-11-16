@@ -2,8 +2,8 @@ import type { JSX } from 'react';
 
 import App from './App';
 import AuthenticationPage from './AuthenticationPage';
-import SignInPage from './SignInPage';
-import SignUpPage from './SignUpPage';
+import LogInPage from './LogInPage';
+import RegisterPage from './RegisterPage';
 
 interface Route {
 	element: JSX.Element;
@@ -20,12 +20,12 @@ const routes: Route[] = [
 		path: '/authentication',
 	},
 	{
-		element: <SignUpPage />,
-		path: '/sign-up',
+		element: <RegisterPage />,
+		path: '/register',
 	},
 	{
-		element: <SignInPage />,
-		path: '/sign-in',
+		element: <LogInPage />,
+		path: '/log-in',
 	},
 ];
 
