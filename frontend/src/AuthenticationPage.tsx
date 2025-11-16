@@ -2,7 +2,7 @@ import type { JSX } from 'react';
 
 import { Link } from 'react-router';
 
-import authenticationpageImage from './assets/authentication-page-image-1.png';
+import authenticationpageImage from './assets/authentication-page-image-1.jpg';
 import Page from './Page';
 
 export default function AuthenticationPage(): JSX.Element {
