@@ -31,7 +31,7 @@ describe('Authentication page', () => {
 			</MemoryRouter>
 		);
 		const description: HTMLElement | null = screen.queryByText(
-			'Zentro is an easy to use cloud storage.'
+			'Make your files secure and easy to access.'
 		);
 		expect(description).not.toBeNull();
 	});

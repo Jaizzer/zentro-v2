@@ -17,7 +17,7 @@ export default function AuthenticationPage(): JSX.Element {
 				</div>
 				<section className="bg-white grid gap-2">
 					<h1 className="text-3xl text-black font-bold">Welcome to Zentro!</h1>
-					<p>Zentro is an easy to use cloud storage.</p>
+					<p>Make your files secure and easy to access.</p>
 					<span className="w-80 grid grid-cols-2 gap-2">
 						<Link
 							className="p-2 rounded-md bg-primary hover:bg-accent text-white text-center font-semibold"
