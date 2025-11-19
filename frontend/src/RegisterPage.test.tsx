@@ -2,15 +2,15 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import { describe, expect, it } from 'vitest';
 
-import SignUpPage from './RegisterPage';
+import RegisterPage from './RegisterPage';
 
-describe('Sign Up page', () => {
+describe('Register page', () => {
 	it('renders the name input field', () => {
 		// Render the authentication page component
 		render(
-			<MemoryRouter initialEntries={['/sign-up']}>
+			<MemoryRouter initialEntries={['/register']}>
 				<Routes>
-					<Route element={<SignUpPage />} path="/sign-up" />
+					<Route element={<RegisterPage />} path="/register" />
 				</Routes>
 			</MemoryRouter>
 		);
@@ -22,9 +22,9 @@ describe('Sign Up page', () => {
 	it('renders the email input field', () => {
 		// Render the authentication page component
 		render(
-			<MemoryRouter initialEntries={['/sign-up']}>
+			<MemoryRouter initialEntries={['/register']}>
 				<Routes>
-					<Route element={<SignUpPage />} path="/sign-up" />
+					<Route element={<RegisterPage />} path="/register" />
 				</Routes>
 			</MemoryRouter>
 		);
@@ -36,9 +36,9 @@ describe('Sign Up page', () => {
 	it('renders the password input field', () => {
 		// Render the authentication page component
 		render(
-			<MemoryRouter initialEntries={['/sign-up']}>
+			<MemoryRouter initialEntries={['/register']}>
 				<Routes>
-					<Route element={<SignUpPage />} path="/sign-up" />
+					<Route element={<RegisterPage />} path="/register" />
 				</Routes>
 			</MemoryRouter>
 		);
