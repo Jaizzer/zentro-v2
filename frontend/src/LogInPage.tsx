@@ -14,15 +14,15 @@ export default function LogInPage(): JSX.Element {
 					<section className="grid w-full justify-items-center bg-white md:justify-items-start">
 						<h1 className="text-left text-3xl font-bold">Log In</h1>
 						<p>Access your files!</p>
-						<form className="mt-1 grid w-full grid-cols-1 justify-items-center gap-4 px-5 py-5 sm:px-0 md:justify-items-start">
+						<form className="mt-1 grid w-full max-w-100 grid-cols-1 justify-items-center gap-4 px-5 py-5 sm:px-0 md:justify-items-start">
 							<input
-								className="outline-accent w-full max-w-100 rounded-md bg-gray-100 px-4 py-3"
+								className="outline-accent w-full rounded-md bg-gray-100 px-4 py-3"
 								data-testid="email-or-username"
 								placeholder="Email or Username"
 								type="email"
 							/>
 							<input
-								className="outline-accent w-full max-w-100 rounded-md bg-gray-100 px-4 py-3"
+								className="outline-accent w-full rounded-md bg-gray-100 px-4 py-3"
 								data-testid="password"
 								placeholder="Password"
 								type="password"
