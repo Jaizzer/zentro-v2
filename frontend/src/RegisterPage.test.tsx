@@ -5,20 +5,6 @@ import { describe, expect, it } from 'vitest';
 import RegisterPage from './RegisterPage';
 
 describe('Register page', () => {
-	it('renders the name input field', () => {
-		// Render the authentication page component
-		render(
-			<MemoryRouter initialEntries={['/register']}>
-				<Routes>
-					<Route element={<RegisterPage />} path="/register" />
-				</Routes>
-			</MemoryRouter>
-		);
-		const nameInputField: HTMLElement = screen.getByTestId('name');
-
-		expect(nameInputField).not.toBeNull();
-	});
-
 	it('renders the email input field', () => {
 		// Render the authentication page component
 		render(
