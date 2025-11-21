@@ -14,7 +14,7 @@ describe('Register page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const nameInputField: HTMLElement | null = screen.queryByTestId('name');
+		const nameInputField: HTMLElement = screen.getByTestId('name');
 
 		expect(nameInputField).not.toBeNull();
 	});
@@ -28,7 +28,7 @@ describe('Register page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const emailInputField: HTMLElement | null = screen.queryByTestId('email');
+		const emailInputField: HTMLElement = screen.getByTestId('email');
 
 		expect(emailInputField).not.toBeNull();
 	});
@@ -42,7 +42,7 @@ describe('Register page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const passwordInputField: HTMLElement | null = screen.queryByTestId('password');
+		const passwordInputField: HTMLElement = screen.getByTestId('password');
 
 		expect(passwordInputField).not.toBeNull();
 	});

@@ -17,7 +17,7 @@ describe('Authentication page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const welcomeMessage: HTMLElement | null = screen.queryByText('Welcome to Zentro!');
+		const welcomeMessage: HTMLElement = screen.getByText('Welcome to Zentro!');
 		expect(welcomeMessage).not.toBeNull();
 	});
 
@@ -30,7 +30,7 @@ describe('Authentication page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const description: HTMLElement | null = screen.queryByText(
+		const description: HTMLElement = screen.getByText(
 			'Make your files secure and easy to access.'
 		);
 		expect(description).not.toBeNull();
@@ -45,7 +45,7 @@ describe('Authentication page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const registerButton: HTMLElement | null = screen.queryByText('Register');
+		const registerButton: HTMLElement = screen.getByText('Register');
 		expect(registerButton).not.toBeNull();
 	});
 
@@ -58,7 +58,7 @@ describe('Authentication page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const logInButton: HTMLElement | null = screen.queryByText('Log In');
+		const logInButton: HTMLElement = screen.getByText('Log In');
 		expect(logInButton).not.toBeNull();
 	});
 
@@ -77,10 +77,8 @@ describe('Authentication page', () => {
 		const user = userEvent.setup();
 
 		// Simulate register button click
-		const registerButton: HTMLElement | null = screen.queryByText('Register');
-		if (registerButton) {
-			await user.click(registerButton);
-		}
+		const registerButton: HTMLElement = screen.getByText('Register');
+		await user.click(registerButton);
 
 		const registerPageDescription = await screen.findByText('Create an account');
 
@@ -102,10 +100,8 @@ describe('Authentication page', () => {
 		const user = userEvent.setup();
 
 		// Simulate log in button click
-		const logInButton: HTMLElement | null = screen.queryByText('Log In');
-		if (logInButton) {
-			await user.click(logInButton);
-		}
+		const logInButton: HTMLElement = screen.getByText('Log In');
+		await user.click(logInButton);
 
 		const logInPageDescription = screen.findByText('Access your files!');
 
