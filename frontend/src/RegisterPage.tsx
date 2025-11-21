@@ -45,7 +45,7 @@ export default function RegisterPage(): JSX.Element {
 							</button>{' '}
 						</form>
 
-						<p>
+						<p className="md:text-sm">
 							Already have an account?{' '}
 							<Link className="text-accent font-medium hover:underline" to="/log-in">
 								Log in
