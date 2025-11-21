@@ -33,6 +33,12 @@ export default function RegisterPage(): JSX.Element {
 								placeholder="Password"
 								type="password"
 							/>
+							<button
+								className="bg-primary hover:bg-accent text-accent w-full rounded-md p-2 px-4 py-3 text-center font-semibold text-white"
+								type="button"
+							>
+								Register
+							</button>{' '}
 						</form>
 					</section>
 				</div>

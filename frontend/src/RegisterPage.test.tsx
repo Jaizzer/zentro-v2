@@ -46,4 +46,19 @@ describe('Register page', () => {
 
 		expect(passwordInputField).not.toBeNull();
 	});
+
+	it('renders the register button', () => {
+		// Render the authentication page component
+		render(
+			<MemoryRouter initialEntries={['/register']}>
+				<Routes>
+					<Route element={<RegisterPage />} path="/register" />
+				</Routes>
+			</MemoryRouter>
+		);
+
+		const registerButton: HTMLElement = screen.getByRole('button', { name: /register/i });
+
+		expect(registerButton).not.toBeNull();
+	});
 });
