@@ -1,5 +1,7 @@
 import type { JSX } from 'react';
 
+import { Link } from 'react-router';
+
 import registerPageImage from './assets/register-page-image-1.png';
 import Page from './Page';
 
@@ -34,6 +36,13 @@ export default function RegisterPage(): JSX.Element {
 								Register
 							</button>{' '}
 						</form>
+
+						<p>
+							Already have an account?{' '}
+							<Link className="text-accent font-medium hover:underline" to="/log-in">
+								Log in
+							</Link>
+						</p>
 					</section>
 				</div>
 			</Page>
