@@ -9,7 +9,7 @@ export default function RegisterPage(): JSX.Element {
 	return (
 		<>
 			<Page>
-				<div className="grid h-full content-start items-start justify-items-center overflow-hidden rounded-lg pt-15 md:grid-cols-2 md:grid-rows-1 md:items-center md:justify-items-start md:gap-10 md:pt-0">
+				<main className="grid h-full content-start items-start justify-items-center overflow-hidden rounded-lg pt-15 md:grid-cols-2 md:grid-rows-1 md:items-center md:justify-items-start md:gap-10 md:pt-0">
 					<div className="md:bg-background grid h-full w-full items-center justify-items-center">
 						<img className="max-w-50 md:max-w-full" src={registerPageImage} />
 					</div>
@@ -52,7 +52,7 @@ export default function RegisterPage(): JSX.Element {
 							</Link>
 						</p>
 					</section>
-				</div>
+				</main>
 			</Page>
 		</>
 	);
