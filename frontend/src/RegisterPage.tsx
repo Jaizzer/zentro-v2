@@ -11,7 +11,7 @@ export default function RegisterPage(): JSX.Element {
 			<Page>
 				<div className="grid h-full content-start items-start justify-items-center overflow-hidden rounded-lg pt-15 md:grid-cols-2 md:grid-rows-1 md:items-center md:justify-items-start md:gap-10 md:pt-0">
 					<div className="md:bg-background grid h-full w-full items-center justify-items-center">
-						<img className="w-full max-w-96 sm:max-w-full" src={registerPageImage} />
+						<img className="max-w-50 md:max-w-full" src={registerPageImage} />
 					</div>
 					<section className="grid w-full justify-items-center bg-white md:justify-items-start">
 						<h1 className="text-left text-3xl font-bold">Register</h1>
