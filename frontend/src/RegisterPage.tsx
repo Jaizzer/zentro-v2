@@ -2,6 +2,9 @@ import type { JSX } from 'react';
 
 import { Link } from 'react-router';
 
+import FacebookIcon from './assets/icons/FacebookIcon';
+import GithubIcon from './assets/icons/GithubIcon';
+import GoogleIcon from './assets/icons/GoogleIcon';
 import registerPageImage from './assets/register-page-image-1.png';
 import Page from './Page';
 
@@ -51,6 +54,31 @@ export default function RegisterPage(): JSX.Element {
 								Log in
 							</Link>
 						</p>
+
+						<div className="mt-8 grid justify-items-center gap-2 md:justify-items-start">
+							<p className="text-accent text-sm">Or continue with</p>
+							<span className="flow-col grid auto-cols-[45px] grid-flow-col grid-rows-[45px] gap-2">
+								<button
+									aria-label="google"
+									className="outline-accent grid items-center justify-items-center overflow-hidden rounded-lg bg-gray-100 hover:bg-gray-300"
+								>
+									<GoogleIcon />
+								</button>
+								<button
+									aria-label="facebook"
+									className="outline-accent grid items-center justify-items-center overflow-hidden rounded-lg bg-gray-100 hover:bg-gray-300"
+								>
+									<FacebookIcon />
+								</button>
+
+								<button
+									aria-label="github"
+									className="outline-accent grid items-center justify-items-center overflow-hidden rounded-lg bg-gray-100 hover:bg-gray-300"
+								>
+									<GithubIcon />
+								</button>
+							</span>
+						</div>
 					</section>
 				</main>
 			</Page>

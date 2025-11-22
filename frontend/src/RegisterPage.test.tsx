@@ -87,4 +87,49 @@ describe('Register page', () => {
 
 		expect(registerButton).not.toBeNull();
 	});
+
+	it('renders the Google login button', () => {
+		// Render the authentication page component
+		render(
+			<MemoryRouter initialEntries={['/register']}>
+				<Routes>
+					<Route element={<RegisterPage />} path="/register" />
+				</Routes>
+			</MemoryRouter>
+		);
+
+		const googleButton: HTMLElement = screen.getByRole('button', { name: /google/i });
+
+		expect(googleButton).not.toBeNull();
+	});
+
+	it('renders the Facebook login button', () => {
+		// Render the authentication page component
+		render(
+			<MemoryRouter initialEntries={['/register']}>
+				<Routes>
+					<Route element={<RegisterPage />} path="/register" />
+				</Routes>
+			</MemoryRouter>
+		);
+
+		const facebookButton: HTMLElement = screen.getByRole('button', { name: /facebook/i });
+
+		expect(facebookButton).not.toBeNull();
+	});
+
+	it('renders the Github login button', () => {
+		// Render the authentication page component
+		render(
+			<MemoryRouter initialEntries={['/register']}>
+				<Routes>
+					<Route element={<RegisterPage />} path="/register" />
+				</Routes>
+			</MemoryRouter>
+		);
+
+		const githubButton: HTMLElement = screen.getByRole('button', { name: /github/i });
+
+		expect(githubButton).not.toBeNull();
+	});
 });
