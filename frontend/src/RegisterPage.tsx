@@ -15,7 +15,7 @@ export default function RegisterPage(): JSX.Element {
 					</div>
 					<section className="grid w-full justify-items-center bg-white md:justify-items-start">
 						<h1 className="text-left text-3xl font-bold">Register</h1>
-						<p>Create an account </p>
+						<p>Create an account 👋</p>
 						<form className="mt-1 grid w-full max-w-100 grid-cols-1 justify-items-center gap-4 px-5 py-5 sm:px-0 md:justify-items-start">
 							<div className="grid w-full">
 								<label htmlFor="email">Email</label>

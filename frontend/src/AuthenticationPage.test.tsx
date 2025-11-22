@@ -80,7 +80,7 @@ describe('Authentication page', () => {
 		const registerButton: HTMLElement = screen.getByText('Register');
 		await user.click(registerButton);
 
-		const registerPageDescription = await screen.findByText('Create an account');
+		const registerPageDescription = await screen.findByText(/Create an account/i);
 
 		expect(registerPageDescription).not.toBeNull();
 	});
