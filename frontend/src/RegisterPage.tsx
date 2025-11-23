@@ -41,7 +41,7 @@ export default function RegisterPage(): JSX.Element {
 								/>
 							</div>
 							<button
-								className="bg-primary hover:bg-accent text-accent w-full rounded-md p-2 px-4 py-3 text-center font-semibold text-white"
+								className="bg-primary hover:bg-accent text-accent outline-accent w-full rounded-md p-2 px-4 py-3 text-center font-semibold text-white"
 								type="button"
 							>
 								Register
@@ -50,7 +50,10 @@ export default function RegisterPage(): JSX.Element {
 
 						<p className="md:text-sm">
 							Already have an account?{' '}
-							<Link className="text-accent font-medium hover:underline" to="/log-in">
+							<Link
+								className="text-accent outline-accent font-medium hover:underline"
+								to="/log-in"
+							>
 								Log in
 							</Link>
 						</p>
