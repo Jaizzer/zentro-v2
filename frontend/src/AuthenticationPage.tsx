@@ -17,13 +17,13 @@ export default function AuthenticationPage(): JSX.Element {
 					<p>Make your files secure and easy to access.</p>
 					<span className="grid w-80 grid-cols-2 gap-2">
 						<Link
-							className="bg-primary hover:bg-accent rounded-md p-2 text-center font-semibold text-white"
+							className="bg-primary hover:bg-accent outline-accent rounded-md p-2 text-center font-semibold text-white"
 							to="/log-in"
 						>
 							Log In
 						</Link>
 						<Link
-							className="bg-background hover:bg-accent text-accent w-full rounded-md p-2 text-center font-semibold hover:text-white"
+							className="bg-background hover:bg-accent text-accent outline-accent w-full rounded-md p-2 text-center font-semibold hover:text-white"
 							to="/register"
 						>
 							Register
