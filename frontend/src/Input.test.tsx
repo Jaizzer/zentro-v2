@@ -6,7 +6,7 @@ import Input, { type InputProps } from './Input';
 const inputProps: InputProps = {
 	id: 'id',
 	name: 'input',
-	placeholder: 'placeholde',
+	placeholder: 'placeholder',
 	type: 'email',
 };
 
