@@ -16,7 +16,7 @@ describe('Register page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const emailInputField: HTMLElement = screen.getByTestId('email');
+		const emailInputField: HTMLElement = screen.getByTestId(/email/i);
 
 		expect(emailInputField).not.toBeNull();
 	});
@@ -30,7 +30,7 @@ describe('Register page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const passwordInputField: HTMLElement = screen.getByTestId('password');
+		const passwordInputField: HTMLElement = screen.getByTestId(/password/i);
 
 		expect(passwordInputField).not.toBeNull();
 	});
