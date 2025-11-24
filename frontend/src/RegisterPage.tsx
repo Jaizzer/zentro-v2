@@ -6,6 +6,7 @@ import FacebookIcon from './assets/icons/FacebookIcon';
 import GithubIcon from './assets/icons/GithubIcon';
 import GoogleIcon from './assets/icons/GoogleIcon';
 import registerPageImage from './assets/register-page-image-1.png';
+import Input from './Input';
 import Page from './Page';
 
 export default function RegisterPage(): JSX.Element {
@@ -20,26 +21,13 @@ export default function RegisterPage(): JSX.Element {
 						<h1 className="text-left text-3xl font-bold">Register</h1>
 						<p>Create an account 👋</p>
 						<form className="mt-1 grid w-full max-w-100 grid-cols-1 justify-items-center gap-4 px-5 py-5 sm:px-0 md:justify-items-start">
-							<div className="grid w-full">
-								<label htmlFor="email">Email</label>
-								<input
-									className="outline-accent rounded-md bg-gray-100 px-4 py-3"
-									data-testid="email"
-									id="email"
-									placeholder="Email"
-									type="email"
-								/>
-							</div>
-							<div className="grid w-full">
-								<label htmlFor="password">Password</label>
-								<input
-									className="outline-accent w-full rounded-md bg-gray-100 px-4 py-3"
-									data-testid="password"
-									id="password"
-									placeholder="Password"
-									type="password"
-								/>
-							</div>
+							<Input id="email" name="Email" placeholder="Email" type="email" />
+							<Input
+								id="password"
+								name="Password"
+								placeholder="Password"
+								type="password"
+							/>
 							<button
 								className="bg-primary hover:bg-accent text-accent outline-accent w-full rounded-md p-2 px-4 py-3 text-center font-semibold text-white"
 								type="button"
