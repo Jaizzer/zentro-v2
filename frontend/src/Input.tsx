@@ -8,5 +8,13 @@ export interface InputProps {
 }
 
 export default function Input({ id, name, placeholder, type }: InputProps): JSX.Element {
-	return <input data-testid={name} id={id} placeholder={placeholder} type={type} />;
+	return (
+		<input
+			className="outline-accent rounded-md bg-gray-100 px-4 py-3"
+			data-testid={name}
+			id={id}
+			placeholder={placeholder}
+			type={type}
+		/>
+	);
 }
