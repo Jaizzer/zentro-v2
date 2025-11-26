@@ -16,7 +16,7 @@ describe('Register page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const emailInputField: HTMLElement = screen.getByTestId(/email/i);
+		const emailInputField: HTMLElement = screen.getByTestId('Email');
 
 		expect(emailInputField).not.toBeNull();
 	});
@@ -30,9 +30,23 @@ describe('Register page', () => {
 				</Routes>
 			</MemoryRouter>
 		);
-		const passwordInputField: HTMLElement = screen.getByTestId(/password/i);
+		const passwordInputField: HTMLElement = screen.getByTestId('Password');
 
 		expect(passwordInputField).not.toBeNull();
+	});
+
+	it('renders the confirm password input field', () => {
+		// Render the authentication page component
+		render(
+			<MemoryRouter initialEntries={['/register']}>
+				<Routes>
+					<Route element={<RegisterPage />} path="/register" />
+				</Routes>
+			</MemoryRouter>
+		);
+		const confirmPasswordInputField: HTMLElement = screen.getByTestId('Confirm Password');
+
+		expect(confirmPasswordInputField).not.toBeNull();
 	});
 
 	it('renders the link to the Log In page', () => {

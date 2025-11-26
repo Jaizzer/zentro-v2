@@ -29,6 +29,12 @@ export default function RegisterPage(): JSX.Element {
 								placeholder="Password"
 								type="password"
 							/>
+							<Input
+								id="confirm-password"
+								name="Confirm Password"
+								placeholder="Confirm Password"
+								type="password"
+							/>
 						</Form>
 
 						<p className="md:text-sm">
